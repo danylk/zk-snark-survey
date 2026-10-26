@@ -1,43 +1,53 @@
-A Survey of Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge
-Sunkwan Kim, Northeastern University
+# A Survey of Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge
+
+**Sunkwan Kim**, Northeastern University
 kim.sunk@northeastern.edu
-Paper: zk-snark-survey.pdf
-Abstract
+
+**Paper:** [zk-snark-survey.pdf](zk-snark-survey.pdf)
+
+## Abstract
+
 Zero-knowledge succinct non-interactive arguments of knowledge (zk-SNARKs) allow a verifier to check a computation with a proof far shorter than the computation, without learning the prover's private inputs. Over the last decade they have moved from theory to deployed systems, and the number of constructions has grown quickly. This survey organizes the main construction families by their setup model: circuit-specific trusted setup (GGPR, Pinocchio, Groth16), universal and updatable setup (Sonic, PLONK, Marlin), and transparent setup (Fractal, the random-oracle variant of Spartan, and Supersonic with class groups), with recursion and folding (Halo, Nova) built on top. We give a single formal definition with a strict succinctness requirement, explain the modular pipeline behind most schemes, and compare the schemes in normalized tables of asymptotic costs and setup parameters, together with their assumptions and the exact counts the papers report, with a source for every entry. Schemes that are often called zk-SNARKs but miss the strict bound are compared separately. A further section draws together the developments since 2022: small and binary fields with challenges from extension fields, lookup-centric and STARK-based zkVMs, folding in place of recursive verification, the gap between proven and conjectured security of hash-based commitments, and lattice-based folding. We conclude with open problems, including linear-time provers, post-quantum security and attacks on the Fiat–Shamir transform.
-Keywords
+
+## Keywords
+
 zk-SNARKs, Zero-Knowledge Proofs, Polynomial Commitment Schemes, Interactive Oracle Proofs, Sum-Check Protocol, GKR Protocol, Arithmetization, Small and Binary Fields, Fiat–Shamir Transform, Trusted Setup, Recursion and Folding, Lookup Arguments, zkVMs, Proximity Gaps, Post-Quantum Security, Lattice-Based Cryptography
-Contents
-Introduction
-Preliminaries
-2.1 Notation and Mathematical Background
-2.2 Interactive Proofs and Arguments
-2.3 Cryptographic Tools
-Defining a zk-SNARK
-3.1 Why Knowledge Assumptions and Random Oracles?
-Anatomy of a Modern zk-SNARK
-4.1 Arithmetization
-4.2 Information-Theoretic Protocols: PCPs, IOPs and Polynomial IOPs
-4.3 Lookup Arguments
-4.4 Polynomial Commitment Schemes
-4.5 Compiling to a Non-interactive Argument
-Construction Families of zk-SNARKs
-5.1 Pairing-based / QAP: GGPR, Pinocchio, Groth16
-5.2 Universal and Updatable Setup: Sonic, PLONK, Marlin
-5.3 Transparent: Fractal, Spartan, Supersonic (DARK)
-5.4 Zero-Knowledge Arguments Outside the Strict Definition
-Recursion, Accumulation and Folding
-6.1 Incrementally verifiable computation
-6.2 Halo and accumulation schemes
-6.3 Folding: Nova
-6.4 Generalizations
-Comparison
-Developments since 2022
-Open problems and future directions
-9.1 Prover efficiency
-9.2 Post-quantum zk-SNARKs
-9.3 Recursion overhead and the security of folding
-9.4 Fiat–Shamir in practice
-9.5 Foundations: SNARGs from standard assumptions
-Conclusion
+
+## Contents
+
+1. Introduction
+2. Preliminaries
+   - 2.1 Notation and Mathematical Background
+   - 2.2 Interactive Proofs and Arguments
+   - 2.3 Cryptographic Tools
+3. Defining a zk-SNARK
+   - 3.1 Why Knowledge Assumptions and Random Oracles?
+4. Anatomy of a Modern zk-SNARK
+   - 4.1 Arithmetization
+   - 4.2 Information-Theoretic Protocols: PCPs, IOPs and Polynomial IOPs
+   - 4.3 Lookup Arguments
+   - 4.4 Polynomial Commitment Schemes
+   - 4.5 Compiling to a Non-interactive Argument
+5. Construction Families of zk-SNARKs
+   - 5.1 Pairing-based / QAP: GGPR, Pinocchio, Groth16
+   - 5.2 Universal and Updatable Setup: Sonic, PLONK, Marlin
+   - 5.3 Transparent: Fractal, Spartan, Supersonic (DARK)
+   - 5.4 Zero-Knowledge Arguments Outside the Strict Definition
+6. Recursion, Accumulation and Folding
+   - 6.1 Incrementally verifiable computation
+   - 6.2 Halo and accumulation schemes
+   - 6.3 Folding: Nova
+   - 6.4 Generalizations
+7. Comparison
+8. Developments since 2022
+9. Open problems and future directions
+   - 9.1 Prover efficiency
+   - 9.2 Post-quantum zk-SNARKs
+   - 9.3 Recursion overhead and the security of folding
+   - 9.4 Fiat–Shamir in practice
+   - 9.5 Foundations: SNARGs from standard assumptions
+10. Conclusion
+
 References
+
 Appendix A. Supplementary Tables and Timeline
