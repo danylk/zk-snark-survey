@@ -51,3 +51,7 @@ zk-SNARKs, Zero-Knowledge Proofs, Polynomial Commitment Schemes, Interactive Ora
 References
 
 Appendix A. Supplementary Tables and Timeline
+
+## Use of AI
+
+AI tools were used to assist in writing this paper.
