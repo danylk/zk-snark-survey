@@ -54,4 +54,4 @@ Appendix A. Supplementary tables and timeline
 
 ## Acknowledgments
 
-This survey was written as a personal project and was not supervised. AI tools were used to assist in writing this paper.
+This survey is an independent project, conceived and directed by the author without a faculty advisor. AI tools were used to assist in writing this paper.
